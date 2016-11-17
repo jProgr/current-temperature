@@ -1,0 +1,33 @@
+#main
+{
+    margin-top: 1em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1
+{
+    font-size: 80vmin;
+    margin: 0;
+    z-index: 1;
+}
+
+#extra_info
+{
+    margin: 0;
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
+    float: right;    
+    z-index: 2;
+    font-size: 3vmin;
+    //height: 1em;
+    
+    li
+    {
+        list-style: none;
+        ul {}
+    }
+}
