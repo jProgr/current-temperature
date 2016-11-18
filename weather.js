@@ -1,3 +1,5 @@
+// This code is awful
+
 function k_converter(kelvin, unit)
 {
     if (unit) { return (kelvin - 273.15) | 0; }
@@ -40,7 +42,6 @@ if (navigator.geolocation)
             {
                 update_degrees();
                 $(".location").html(place + ", " + country);
-                // image
             });
         });
     });
