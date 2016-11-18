@@ -2,7 +2,6 @@ function k_converter(kelvin, unit)
 {
     if (unit) { return (kelvin - 273.15) | 0; }
     else { return ((kelvin * 9 / 5) - 459.67) | 0; }
-    return 0;   
 }
 
 function update_degrees()
