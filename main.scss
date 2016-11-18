@@ -1,3 +1,19 @@
+$base_color: #de6e66;
+$text_color: #E2E3D5;
+$gradient: (120deg, $base_color, #dd6d65, #dc6c61, #d96060);
+
+body
+{
+    background: $base_color;
+    background: -webkit-linear-gradient($gradient);
+    background: -o-linear-gradient($gradient);
+    background: -moz-linear-gradient($gradient);
+    background: linear-gradient($gradient);
+    
+    font-family: 'Signika', sans-serif;
+    color: $text_color;
+}
+
 #main
 {
     margin-top: 1em;
@@ -23,11 +39,22 @@ h1
     float: right;    
     z-index: 2;
     font-size: 3vmin;
-    //height: 1em;
     
-    li
+    ul
     {
         list-style: none;
-        ul {}
+        margin: 0;
+        padding: 0;
+
+        li { display: inline; }
+    }
+    
+    button
+    {
+        background-color: transparent;
+        color: $text_color;
+        border: none;
+        padding: 0;
+        margin: 0;
     }
 }
